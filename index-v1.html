@@ -1,0 +1,1060 @@
+<html class="scroll-smooth" lang="en">
+
+<head></head>
+
+<body class="bg-surface font-body-md text-on-surface">
+
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Pancham Seeds | Precision in Every Seed</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Work+Sans:wght@400;500&amp;family=JetBrains+Mono:wght@500&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#694300",
+                        "surface-container-high": "#e7e8e7",
+                        "tertiary-container": "#3f6754",
+                        "surface": "#f9f9f8",
+                        "primary": "#0f5238",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#ffb957",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#c1ecd4",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#b1f0ce",
+                        "background": "#f9f9f8",
+                        "on-primary-fixed": "#002114",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#a5d0b9",
+                        "outline-variant": "#bfc9c1",
+                        "surface-variant": "#e1e3e2",
+                        "inverse-primary": "#95d4b3",
+                        "surface-tint": "#2c694e",
+                        "on-primary-container": "#a8e7c5",
+                        "inverse-on-surface": "#f0f1f0",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#835400",
+                        "inverse-surface": "#2e3131",
+                        "primary-fixed-dim": "#95d4b3",
+                        "on-tertiary-fixed-variant": "#274e3d",
+                        "on-tertiary-fixed": "#002114",
+                        "on-tertiary-container": "#b8e3cb",
+                        "on-surface-variant": "#404943",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f3f4f3",
+                        "on-secondary-fixed": "#2a1800",
+                        "on-secondary-fixed-variant": "#643f00",
+                        "surface-container": "#edeeed",
+                        "primary-container": "#2d6a4f",
+                        "secondary-fixed": "#ffddb5",
+                        "on-surface": "#191c1c",
+                        "on-background": "#191c1c",
+                        "on-primary-fixed-variant": "#0e5138",
+                        "surface-dim": "#d9dad9",
+                        "secondary-container": "#fcab28",
+                        "surface-bright": "#f9f9f8",
+                        "outline": "#707973",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#274f3d",
+                        "surface-container-highest": "#e1e3e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "8px",
+                        "xl": "16px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "xl": "80px",
+                        "md": "24px",
+                        "lg": "48px",
+                        "xs": "4px",
+                        "base": "8px",
+                        "sm": "12px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["JetBrains Mono"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "body-lg": ["Work Sans"],
+                        "headline-lg": ["Manrope"],
+                        "button": ["Manrope"],
+                        "body-md": ["Work Sans"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "button": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .seed-card-accent {
+            border-top: 4px solid #2d6a4f;
+        }
+
+        .shadow-soft {
+            box-shadow: 0px 10px 30px rgba(45, 106, 79, 0.08);
+        }
+
+        .premium-input {
+            @apply w-full bg-surface-container-lowest border-outline-variant rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all;
+        }
+    </style>
+    <!-- TopNavBar -->
+    <header class="bg-surface/90 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant shadow-sm">
+        <div class="flex justify-between items-center px-6 md:px-margin-desktop py-4 max-w-[1280px] mx-auto">
+            <div class="flex items-center gap-2">
+                <span class="text-primary text-headline-md font-bold font-headline-md tracking-tight">Pancham
+                    Seeds</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="font-button text-button text-primary border-b-2 border-primary pb-1" href="#">Home</a>
+                <a class="font-button text-button text-on-surface-variant hover:text-primary transition-colors duration-200"
+                    href="#">About Us</a>
+                <a class="font-button text-button text-on-surface-variant hover:text-primary transition-colors duration-200"
+                    href="#">Products</a>
+                <a class="font-button text-button text-on-surface-variant hover:text-primary transition-colors duration-200"
+                    href="#">Contact</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button
+                    class="hidden lg:flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+                    <span class="material-symbols-outlined" data-icon="search">search</span>
+                </button>
+                <button
+                    class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-button text-button hover:bg-primary/90 transition-all active:scale-95 shadow-sm">Dealer
+                    Inquiry</button>
+            </div>
+        </div>
+    </header>
+    <!-- 1. Hero Section -->
+    <section class="relative min-h-[720px] flex items-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img class="w-full h-full object-cover"
+                data-alt="A sprawling, lush green agricultural field under a clear blue sky, showcasing rows of vibrant, healthy vegetable crops."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkID32uUrdGtSjXut_I4UPx_39YD8Z0aEaSkA6jm7fSXd4uKUk_8nAHI4F7NqZtNmSgy1onzbT2YQQMEoBoQ3A_5gcf_KbMDpFo5TwDSwNX0xHFPnrrPnrNdAalnBcyIKZHno9R-xm1R3G25-v1LefSzgQgd2gR3VKCcgpfWNMK8U0LawN1yWVltnwOCwc1xtnMilTaTMgbp2Xv7WWsi9t65JqXWUSqgt5__H50_bSmg8628GU-dMHlSz_lUI8ttFpGT8xBpU0VdQ" />
+            <div class="absolute inset-0 bg-gradient-to-r from-surface/95 via-surface/60 to-transparent"></div>
+        </div>
+        <div class="relative z-10 px-6 md:px-margin-desktop max-w-[1280px] mx-auto w-full">
+            <div class="max-w-2xl">
+                <span
+                    class="inline-block py-1.5 px-4 bg-tertiary-fixed text-on-tertiary-fixed rounded-full font-label-md text-label-md mb-8 tracking-wider uppercase">BIOLOGICAL
+                    EXCELLENCE</span>
+                <h1 class="font-display-lg text-display-lg text-on-surface mb-6 leading-[1.1]">Premium Vegetable & Field
+                    Crop Seeds
+                    For Higher Yield, Stronger Growth & Better Harvests</h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-lg">Premium Vegetable Crop and
+                    Field Crop Seeds. Designed for Better Yield, Strong Growth, and Reliable Performance in diverse
+                    climates.</p>
+                <div class="flex flex-wrap gap-5">
+                    <button
+                        class="bg-primary text-on-primary px-10 py-4 rounded-lg font-button text-button shadow-lg shadow-primary/20 hover:opacity-95 transition-all flex items-center gap-3">
+                        Explore Products <span class="material-symbols-outlined"
+                            data-icon="arrow_forward">arrow_forward</span>
+                    </button>
+                    <button
+                        class="bg-surface-container-lowest text-primary border border-outline-variant px-10 py-4 rounded-lg font-button text-button hover:bg-surface-container transition-all">Contact
+                        Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 2. Trust Statistics -->
+    <section class="relative -mt-24 z-20 px-6 md:px-margin-desktop max-w-[1280px] mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div
+                class="glass-card p-8 rounded-xl shadow-soft flex flex-col items-center text-center hover:-translate-y-2 transition-all duration-300">
+                <h3 class="font-headline-md text-display-lg text-primary mb-2">72+</h3>
+                <p class="font-body-md text-on-surface-variant font-medium">Seed Varieties</p>
+            </div>
+            <div
+                class="glass-card p-8 rounded-xl shadow-soft flex flex-col items-center text-center hover:-translate-y-2 transition-all duration-300">
+                <h3 class="font-headline-md text-display-lg text-primary mb-2">100%</h3>
+                <p class="font-body-md text-on-surface-variant font-medium">Quality Tested Lots</p>
+            </div>
+            <div
+                class="glass-card p-8 rounded-xl shadow-soft flex flex-col items-center text-center hover:-translate-y-2 transition-all duration-300">
+                <h3 class="font-headline-md text-display-lg text-primary mb-2">15+</h3>
+                <p class="font-body-md text-on-surface-variant font-medium">Crop Segments</p>
+            </div>
+            <div
+                class="glass-card p-8 rounded-xl shadow-soft flex flex-col items-center text-center hover:-translate-y-2 transition-all duration-300">
+                <h3 class="font-headline-md text-display-lg text-primary mb-2">20k+</h3>
+                <p class="font-body-md text-on-surface-variant font-medium">Happy Farmers</p>
+            </div>
+            <div
+                class="glass-card p-8 rounded-xl shadow-soft flex flex-col items-center text-center hover:-translate-y-2 transition-all duration-300">
+                <h3 class="font-headline-md text-display-lg text-primary mb-2">98%</h3>
+                <p class="font-body-md text-on-surface-variant font-medium">Germination Standards</p>
+            </div>
+        </div>
+    </section>
+    <!-- 3. Industry We Serve -->
+    <section class="py-xl px-6 md:px-margin-desktop max-w-[1280px] mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="font-headline-lg text-headline-lg mb-4">Supporting Every Stakeholder in Agriculture</h2>
+            <p class="font-body-lg text-on-surface-variant max-w-3xl mx-auto">Our seed solutions are trusted by the
+                entire agricultural ecosystem to deliver reliable seed varieties that help improve productivity and crop
+                performance.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+            <!-- Card 1 -->
+            <div class="flex flex-col items-center text-center group">
+                <div
+                    class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center text-on-primary-fixed mb-5 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 shadow-sm">
+                    <span class="material-symbols-outlined text-3xl" data-icon="agriculture">agriculture</span>
+                </div>
+                <h4 class="font-button text-button mb-2">Farmers</h4>
+                <p class="text-xs text-on-surface-variant leading-relaxed">Access to reliable seed varieties for better
+                    crop performance.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="flex flex-col items-center text-center group">
+                <div
+                    class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center text-on-primary-fixed mb-5 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 shadow-sm">
+                    <span class="material-symbols-outlined text-3xl" data-icon="storefront">storefront</span>
+                </div>
+                <h4 class="font-button text-button mb-2">Dealers</h4>
+                <p class="text-xs text-on-surface-variant leading-relaxed">Strong product portfolio with growing farmer
+                    demand.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="flex flex-col items-center text-center group">
+                <div
+                    class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center text-on-primary-fixed mb-5 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 shadow-sm">
+                    <span class="material-symbols-outlined text-3xl" data-icon="hub">hub</span>
+                </div>
+                <h4 class="font-button text-button mb-2">Distributors</h4>
+                <p class="text-xs text-on-surface-variant leading-relaxed">Consistent supply and market support.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="flex flex-col items-center text-center group">
+                <div
+                    class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center text-on-primary-fixed mb-5 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 shadow-sm">
+                    <span class="material-symbols-outlined text-3xl" data-icon="psychology">psychology</span>
+                </div>
+                <h4 class="font-button text-button mb-2">Professionals</h4>
+                <p class="text-xs text-on-surface-variant leading-relaxed">Technical crop information and product
+                    guidance.</p>
+            </div>
+            <!-- Card 5 -->
+            <div class="flex flex-col items-center text-center group">
+                <div
+                    class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center text-on-primary-fixed mb-5 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 shadow-sm">
+                    <span class="material-symbols-outlined text-3xl" data-icon="potted_plant">potted_plant</span>
+                </div>
+                <h4 class="font-button text-button mb-2">Nurseries</h4>
+                <p class="text-xs text-on-surface-variant leading-relaxed">Quality seed material for healthy crop
+                    establishment.</p>
+            </div>
+            <!-- Card 6 -->
+            <div class="flex flex-col items-center text-center group">
+                <div
+                    class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center text-on-primary-fixed mb-5 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 shadow-sm">
+                    <span class="material-symbols-outlined text-3xl" data-icon="contract">contract</span>
+                </div>
+                <h4 class="font-button text-button mb-2">Contract Growers</h4>
+                <p class="text-xs text-on-surface-variant leading-relaxed">Performance-focused varieties for commercial
+                    cultivation.</p>
+            </div>
+        </div>
+    </section>
+    <!-- 4. About Pancham Seeds -->
+    <section class="py-xl bg-surface-container-low">
+        <div class="px-6 md:px-margin-desktop max-w-[1280px] mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div class="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+                    <img class="w-full h-full object-cover"
+                        data-alt="A researcher in a modern laboratory inspecting seeds."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa-zDrBbSvLjPDaggiKaEDIbyeeKBbPMQl-rwgDqLqhR_fnp0eIWO6k8gcNVpY50jn6H8T2nOYoak_bfwiw8D-ZcdHaDSU1fWQ8Usk24kUso6NunWTmevd4Ksx2fkaPrUs7mhJQKc1R0wD5uOjGCAfBDRwMqVeygseYJhYEpXbYW4R1u9SHBGvRuh3WwmJydvhpyHwOttugELWLe3MX_uoEpn00o-YOvy2vtCYv_2_7YowsN5BfU9AKjTlu47jnJXpbBKMSkCnIn8" />
+                </div>
+                <div
+                    class="absolute -bottom-10 -right-10 bg-secondary-container p-10 rounded-2xl hidden md:block max-w-[240px] shadow-xl">
+                    <p class="font-headline-md text-on-secondary-container leading-tight">20+ Years of Seed Legacy</p>
+                </div>
+            </div>
+            <div>
+                <span class="text-primary font-label-md text-label-md mb-4 block uppercase tracking-widest">OUR
+                    LEGACY</span>
+                <h2 class="font-headline-lg text-headline-lg mb-8">Committed to Reliable Seed Solutions for Modern
+                    Agriculture</h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed">
+                    At Pancham Seeds, we bridge the gap between biological technology and the grounded reality of modern
+                    farming. Our mission is to empower farmers with seeds that aren't just biological units, but
+                    reliable foundations for prosperity. We focus on scientific precision to ensure each seed delivers
+                    on its promise of vigor and yield.
+                </p>
+                <button
+                    class="border-2 border-primary text-primary px-10 py-3.5 rounded-lg font-button text-button hover:bg-primary hover:text-on-primary transition-all duration-300">Learn
+                    More About Us</button>
+            </div>
+        </div>
+    </section>
+    <!-- 5. Quality Standards (Enhanced) -->
+    <section class="py-xl px-6 md:px-margin-desktop max-w-[1280px] mx-auto">
+        <div class="text-center mb-16">
+            <span class="text-primary font-label-md text-label-md mb-3 block uppercase tracking-widest">CERTIFIED
+                TRUST</span>
+            <h2 class="font-headline-lg text-headline-lg mb-4">World-Class Quality Standards</h2>
+            <p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">Every seed lot is processed and tested
+                according to rigorous international protocols to ensure 100% field success.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+                class="p-10 bg-surface-container-lowest border border-outline-variant rounded-2xl flex flex-col items-center text-center shadow-sm hover:shadow-md transition-all group">
+                <div
+                    class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all">
+                    <span class="material-symbols-outlined text-4xl" data-icon="verified">verified</span>
+                </div>
+                <h4 class="font-headline-md text-headline-md mb-3">ISO 9001:2015</h4>
+                <p class="font-body-md text-on-surface-variant leading-relaxed">Globally recognized Quality Management
+                    System for consistent product excellence.</p>
+            </div>
+            <div
+                class="p-10 bg-surface-container-lowest border border-outline-variant rounded-2xl flex flex-col items-center text-center shadow-sm hover:shadow-md transition-all group">
+                <div
+                    class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all">
+                    <span class="material-symbols-outlined text-4xl" data-icon="biotech">biotech</span>
+                </div>
+                <h4 class="font-headline-md text-headline-md mb-3">NABL Accredited Lab</h4>
+                <p class="font-body-md text-on-surface-variant leading-relaxed">In-house scientific testing with
+                    national accreditation for germination and purity.</p>
+            </div>
+            <div
+                class="p-10 bg-surface-container-lowest border border-outline-variant rounded-2xl flex flex-col items-center text-center shadow-sm hover:shadow-md transition-all group">
+                <div
+                    class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all">
+                    <span class="material-symbols-outlined text-4xl" data-icon="gavel">gavel</span>
+                </div>
+                <h4 class="font-headline-md text-headline-md mb-3">Govt. Registered</h4>
+                <p class="font-body-md text-on-surface-variant leading-relaxed">Official certification under national
+                    seed acts for production and processing.</p>
+            </div>
+            <div
+                class="p-10 bg-surface-container-lowest border border-outline-variant rounded-2xl flex flex-col items-center text-center shadow-sm hover:shadow-md transition-all group">
+                <div
+                    class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all">
+                    <span class="material-symbols-outlined text-4xl" data-icon="microscope">microscope</span>
+                </div>
+                <h4 class="font-headline-md text-headline-md mb-3">DSIR Recognized R&amp;D</h4>
+                <p class="font-body-md text-on-surface-variant leading-relaxed">Continuous innovation backed by
+                    government-recognized research facilities.</p>
+            </div>
+            <div
+                class="p-10 bg-surface-container-lowest border border-outline-variant rounded-2xl flex flex-col items-center text-center shadow-sm hover:shadow-md transition-all group">
+                <div
+                    class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all">
+                    <span class="material-symbols-outlined text-4xl" data-icon="factory">factory</span>
+                </div>
+                <h4 class="font-headline-md text-headline-md mb-3">GMP Facilities</h4>
+                <p class="font-body-md text-on-surface-variant leading-relaxed">Good Manufacturing Practices in seed
+                    processing and packaging stages.</p>
+            </div>
+            <div
+                class="p-10 bg-surface-container-lowest border border-outline-variant rounded-2xl flex flex-col items-center text-center shadow-sm hover:shadow-md transition-all group">
+                <div
+                    class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all">
+                    <span class="material-symbols-outlined text-4xl" data-icon="eco">eco</span>
+                </div>
+                <h4 class="font-headline-md text-headline-md mb-3">PVP Certified</h4>
+                <p class="font-body-md text-on-surface-variant leading-relaxed">Plant Variety Protection for exclusive,
+                    high-performance research hybrids.</p>
+            </div>
+        </div>
+    </section>
+    <!-- 6. Product Categories (Vegetable/Field + Focus Areas) -->
+    <section class="bg-surface-container-low py-xl">
+        <div class="px-6 md:px-margin-desktop max-w-[1280px] mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-headline-lg text-headline-lg mb-4">Focused on Agricultural Excellence</h2>
+                <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Our range is engineered for diverse
+                    climates and specialized cultivation needs.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Vegetable Crops -->
+                <div
+                    class="bg-surface-container-lowest rounded-xl shadow-soft overflow-hidden group border border-outline-variant/30">
+                    <div class="h-52 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            data-alt="Vegetables"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJQe8UbAJX0tu9Sb6nJriIfvKdObx_faMa1QwxzMGmgZRRKdKkxQxUAJEEjwMfd1uqr4arj2x4V5Za13u-HC43E2DsID1_HWi8JexRoFY2eECZXUnuar3vM1tr2BFZFg0nnetTIQ0dITcbHJsCU1p6MqbpOAep1SjKrwbdssegW1PXE7axyt0W0poVYI6N-vkzIs33KDIfYeaGEVxx4Nr_FV5lXTkPQt3MAmTVXkGCflOSgP_mIzjFJzO7vB6dwXYI6HO7gok-DZw" />
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-headline-md text-primary mb-3">Vegetable Crops</h3>
+                        <p class="text-sm text-on-surface-variant mb-6 leading-relaxed">High-value crop varieties for
+                            quality production and better market prices.</p>
+                        <button
+                            class="text-primary font-button text-button flex items-center gap-2 hover:gap-3 transition-all">View
+                            Catalog <span class="material-symbols-outlined">chevron_right</span></button>
+                    </div>
+                </div>
+                <!-- Field Crops -->
+                <div
+                    class="bg-surface-container-lowest rounded-xl shadow-soft overflow-hidden group border border-outline-variant/30">
+                    <div class="h-52 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            data-alt="Maize and cotton"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWYx5uYizNBo60RSUM74BSzHX-YNKys4-iMfurKspM9bZxfT29lYsTH-3_9MkA_VXbktaaOEL9NDIAAKGakbh84tyB55_OV4lnTmiGi5KsYcGoFvo_zKk2cIUeMzhG6-UWTbETNysXZ_-eHJJEitrkMbRvBy68RF_ZcDr0HAEyOrsWNZhSyPzFA0UbuywOkx3RDsnXYmyrCZA0YLJlQbXjwkcSlTajeV8Fc_WTtXaOXMjid9UELTcZh_dWIPc6Fnklm5bwARVZIhY" />
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-headline-md text-secondary mb-3">Field Crops</h3>
+                        <p class="text-sm text-on-surface-variant mb-6 leading-relaxed">Reliable varieties for
+                            large-scale cultivation and maximum yield per acre.</p>
+                        <button
+                            class="text-secondary font-button text-button flex items-center gap-2 hover:gap-3 transition-all">View
+                            Catalog <span class="material-symbols-outlined">chevron_right</span></button>
+                    </div>
+                </div>
+                <!-- Research & Development (New) -->
+                <div
+                    class="bg-surface-container-lowest rounded-xl shadow-soft overflow-hidden group border border-outline-variant/30">
+                    <div class="h-52 flex items-center justify-center bg-primary/5">
+                        <span
+                            class="material-symbols-outlined text-primary text-6xl group-hover:scale-110 transition-transform duration-500"
+                            data-icon="lab_research">lab_research</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-headline-md text-primary mb-3">R&amp;D Innovation</h3>
+                        <p class="text-sm text-on-surface-variant mb-6 leading-relaxed">Advanced genetic mapping and
+                            continuous breeding for climate resilience.</p>
+                        <button
+                            class="text-primary font-button text-button flex items-center gap-2 hover:gap-3 transition-all">Learn
+                            More <span class="material-symbols-outlined">chevron_right</span></button>
+                    </div>
+                </div>
+                <!-- Farmer Support -->
+                <div
+                    class="bg-surface-container-lowest rounded-xl shadow-soft overflow-hidden group border border-outline-variant/30">
+                    <div class="h-52 flex items-center justify-center bg-secondary/5">
+                        <span
+                            class="material-symbols-outlined text-secondary text-6xl group-hover:scale-110 transition-transform duration-500"
+                            data-icon="support_agent">support_agent</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-headline-md text-secondary mb-3">Farmer Support</h3>
+                        <p class="text-sm text-on-surface-variant mb-6 leading-relaxed">Expert guidance for variety
+                            selection, sowing, and cultivation practices.</p>
+                        <button
+                            class="text-secondary font-button text-button flex items-center gap-2 hover:gap-3 transition-all">Get
+                            Support <span class="material-symbols-outlined">chevron_right</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Category Overview -->
+    <section class="py-xl bg-surface-container-low">
+        <div class="max-w-7xl mx-auto px-margin-desktop">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-lg gap-md">
+                <div>
+                    <h2 class="font-headline-lg text-headline-lg text-primary mb-xs">Seed Categories</h2>
+                    <p class="text-on-surface-variant font-body-md">Specialized solutions for every farming requirement.
+                    </p>
+                </div>
+                <a class="text-primary font-button border-b border-primary pb-1 flex items-center gap-xs" href="#">
+                    View All Categories <span class="material-symbols-outlined">chevron_right</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+                <!-- Vegetable Crops -->
+                <div class="group relative h-[400px] rounded-xl overflow-hidden shadow-lg border-t-4 border-primary">
+                    <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        data-alt="A professional close-up of vibrant, high-yield vegetable crops, specifically red peppers and dark green leafy greens growing in a modern hydroponic system. The lighting is crisp and surgical, emphasizing the health and color saturation of the vegetables. The background is a clean, white-toned research greenhouse environment, creating a premium scientific aesthetic with sharp focus and natural vitality."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm-RVb-7yIel0Sd-aLuInl1TZ3JF1GjJCKApL9citJK_2D-9xylhgUHKZohmlcBR5irw5cZDzV_2TT2tZeH4SAlj8S3QYaVKEffScVyMt0MhotWjequiQRg4oWatGB1nl8z7zicNz8sC-P6sWifVVN1rCP26tUEqzzcUSzKgCftr40rSWAVKHZN6yslt4v0Iac-TqPlS8mqEwnuOgJMwBXObNw9I5xef8pWtpLMWwMCxZh9n3332FD89HeKDsTDSeCT9qzCd2l55k" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 p-lg text-on-primary">
+                        <h3 class="font-headline-lg text-headline-lg mb-sm">Vegetable Crops</h3>
+                        <p class="mb-md opacity-90 max-w-sm">Premium seeds for commercial vegetable production,
+                            engineered
+                            for flavor and shelf-life.</p>
+                        <button
+                            class="bg-surface-container-lowest text-primary px-6 py-2 rounded-lg font-button hover:bg-secondary-container hover:text-on-secondary-container transition-colors">
+                            Explore Vegetable Seeds
+                        </button>
+                    </div>
+                </div>
+                <!-- Field Crops -->
+                <div class="group relative h-[400px] rounded-xl overflow-hidden shadow-lg border-t-4 border-secondary">
+                    <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        data-alt="A vast, high-definition panoramic view of a golden wheat field ready for harvest under a clear blue sky. The grain is dense and uniform, catching the sunlight with a brilliant gold glow. The image style is editorial and grand, conveying large-scale agricultural success and reliability. The color palette emphasizes rich yellows and deep blues, reflecting the harvest gold and corporate professional theme."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiXfen3VUXhz8Di4Qm7qzKLO4WxjZ3b8ZhaNkIHbYq9iHx3WmQ7W0rYEHPdfG62oIyLvT2JNVmBAuga1p7fZg_S1faPMgxpDaP5IntpP21ZRRtF2EMj-m27o0zNCIQ-FMfeIiCcphYPvaCbygrHlLTTiMDe6MJIJPC9_anJzeE4JxVT_GpS-igqyFKuz8LedfRKoja2zLlHuE3yXmNp45umwu5HMB6jmRAddHLY4hLs_9Tq5CFHUC2UDhgYjcs9Tt-VsYKjUNtp6s" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 p-lg text-on-primary">
+                        <h3 class="font-headline-lg text-headline-lg mb-sm">Field Crops</h3>
+                        <p class="mb-md opacity-90 max-w-sm">Drought-resistant maize, wheat, and soybeans optimized for
+                            maximum field yield.</p>
+                        <button
+                            class="bg-surface-container-lowest text-primary px-6 py-2 rounded-lg font-button hover:bg-secondary-container hover:text-on-secondary-container transition-colors">
+                            Explore Field Seeds
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 7. Why Farmers Trust Us -->
+    <section class="py-xl px-6 md:px-margin-desktop max-w-[1280px] mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+            <div class="max-w-xl">
+                <span class="text-primary font-label-md text-label-md mb-3 block uppercase tracking-widest">OUR
+                    ADVANTAGE</span>
+                <h2 class="font-headline-lg text-headline-lg">Why Farmers Consistently Choose Pancham</h2>
+            </div>
+            <p class="font-body-md text-on-surface-variant max-w-sm leading-relaxed">Every seed we package is a result
+                of rigorous field testing and scientific validation under real farm conditions.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div
+                class="p-10 rounded-2xl border border-outline-variant hover:border-primary transition-all bg-surface-container-lowest shadow-sm hover:shadow-md group">
+                <span
+                    class="material-symbols-outlined text-primary text-5xl mb-6 block group-hover:scale-110 transition-transform"
+                    data-icon="energy_savings_leaf">energy_savings_leaf</span>
+                <h4 class="font-headline-md text-headline-md mb-4">Better Germination</h4>
+                <p class="font-body-md text-on-surface-variant leading-relaxed">High germination percentages ensuring a
+                    dense and uniform crop stand from the very first week of sowing.</p>
+            </div>
+            <div
+                class="p-10 rounded-2xl border border-outline-variant hover:border-primary transition-all bg-surface-container-lowest shadow-sm hover:shadow-md group">
+                <span
+                    class="material-symbols-outlined text-primary text-5xl mb-6 block group-hover:scale-110 transition-transform"
+                    data-icon="fitness_center">fitness_center</span>
+                <h4 class="font-headline-md text-headline-md mb-4">Strong Plant Vigour</h4>
+                <p class="font-body-md text-on-surface-variant leading-relaxed">Exceptional seedling strength that
+                    withstands initial biotic and abiotic stresses while growing rapidly.</p>
+            </div>
+            <div
+                class="p-10 rounded-2xl border border-outline-variant hover:border-primary transition-all bg-surface-container-lowest shadow-sm hover:shadow-md group">
+                <span
+                    class="material-symbols-outlined text-primary text-5xl mb-6 block group-hover:scale-110 transition-transform"
+                    data-icon="trending_up">trending_up</span>
+                <h4 class="font-headline-md text-headline-md mb-4">Consistent Yield</h4>
+                <p class="font-body-md text-on-surface-variant leading-relaxed">Reliable performance harvest after
+                    harvest, maintaining high productivity and uniformity across all seasons.</p>
+            </div>
+        </div>
+    </section>
+    <!-- 10. Featured Products -->
+    <section class="py-xl bg-primary text-on-primary">
+        <div class="px-6 md:px-margin-desktop max-w-[1280px] mx-auto">
+            <h2 class="font-headline-lg text-headline-lg mb-16 text-center">Featured High-Yield Varieties</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Variety Card 1 -->
+                <div
+                    class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 flex flex-col items-center text-center group relative">
+                    <div class="absolute top-4 right-4 z-10">
+                        <span
+                            class="bg-secondary-container text-on-secondary-container text-[10px] font-bold px-2 py-1 rounded uppercase tracking-tighter">Disease
+                            Resistant</span>
+                    </div>
+                    <div class="w-full aspect-[4/5] overflow-hidden rounded-xl mb-6">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            data-alt="Redgold variety"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNujWEV6bq6oc7IyypiltmQuJhY9aZcpgvW5Tq_xNbL_o3iQCBx1Z-Jhe1I_5yktsbSjdaDeyDnGQycEN4LL4OM8VtPyFCg5SHlBMr2JT1f158S9RqFJEEuHvtjUzCtG9Mu9h7wuBjkpZVNx_3qSTa0Yz1IZCXbWxfK13AgfEKOinsOmX7uUy9TLifXY6PafBmMyL4AzhkwD8hX6jkq5VAuuYPVeGoicWqnHqmCkNqJv4GnifBVlWD_czoAqDBkYRyCIdtEExKQYc" />
+                    </div>
+                    <h5 class="font-headline-md text-headline-md mb-1 text-on-primary-container">Pancham Redgold</h5>
+                    <p class="font-label-md text-label-md uppercase tracking-widest opacity-80 mb-6">Hybrid Tomato</p>
+                    <button
+                        class="mt-auto text-primary-fixed font-button text-button flex items-center gap-2 hover:gap-4 transition-all">View
+                        Details <span class="material-symbols-outlined"
+                            data-icon="chevron_right">chevron_right</span></button>
+                </div>
+                <!-- Variety Card 2 -->
+                <div
+                    class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 flex flex-col items-center text-center group relative">
+                    <div class="absolute top-4 right-4 z-10">
+                        <span
+                            class="bg-secondary-container text-on-secondary-container text-[10px] font-bold px-2 py-1 rounded uppercase tracking-tighter">Heat
+                            Tolerant</span>
+                    </div>
+                    <div class="w-full aspect-[4/5] overflow-hidden rounded-xl mb-6">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            data-alt="Chilli variety"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUwSLqUlN6eYtQWdLm3lKFICAgm5FjF1vnJ8IDQjmO4qMhpYRNGiZ9eLE-5ZALj4PcSL1kGELeZWqAD8RV0sCCFpgvYjuUrRTS9GBK5YaeFGoe938T8kiah1JOeRQQf5esN1QLKWGW69-1xYSIwxU5ycU1pvM5I7P5h-zwx6wvZ4p5B60G3HJGxpIUSiPdKFonErJ5qR8TqScrsIDyIOR72LMyRHm1p3hy0BnTMeOtAEVXobsCloWFfcYdY_mB3UrEEQIYbDnLRfs" />
+                    </div>
+                    <h5 class="font-headline-md text-headline-md mb-1 text-on-primary-container">Pancham G4</h5>
+                    <p class="font-label-md text-label-md uppercase tracking-widest opacity-80 mb-6">Hybrid Chilli</p>
+                    <button
+                        class="mt-auto text-primary-fixed font-button text-button flex items-center gap-2 hover:gap-4 transition-all">View
+                        Details <span class="material-symbols-outlined"
+                            data-icon="chevron_right">chevron_right</span></button>
+                </div>
+                <!-- Variety Card 3 -->
+                <div
+                    class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 flex flex-col items-center text-center group relative">
+                    <div class="absolute top-4 right-4 z-10">
+                        <span
+                            class="bg-secondary-container text-on-secondary-container text-[10px] font-bold px-2 py-1 rounded uppercase tracking-tighter">YVMV
+                            Resistant</span>
+                    </div>
+                    <div class="w-full aspect-[4/5] overflow-hidden rounded-xl mb-6">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            data-alt="Okra variety"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9EdT1nClj4zIJaapU1u0QHY6Iey4Zj5UzYopG00AjwqRS753_TCAv0TrXj_2r09pFLAPUzoaJ2sB5Kcl8QpTkkAHnabtGdKajZDl_ypmLedcPoz2qvnNIlDqfRcTqkRECZY2HicQkeLxG-nXBsvH1IVOaEKUjSub5z74Hckh-OnAsP3PwXQ6hAKnKSEO6MOc26H3uhF02NbksFFTKhaGjmqYamW7Py_IOEkzzhaAzHUNj5CwccrcQPhsrcHEWnZWcBNV9lXbYF_c" />
+                    </div>
+                    <h5 class="font-headline-md text-headline-md mb-1 text-on-primary-container">Priya 81</h5>
+                    <p class="font-label-md text-label-md uppercase tracking-widest opacity-80 mb-6">Hybrid Okra</p>
+                    <button
+                        class="mt-auto text-primary-fixed font-button text-button flex items-center gap-2 hover:gap-4 transition-all">View
+                        Details <span class="material-symbols-outlined"
+                            data-icon="chevron_right">chevron_right</span></button>
+                </div>
+                <!-- Variety Card 4 -->
+                <div
+                    class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 flex flex-col items-center text-center group relative">
+                    <div class="absolute top-4 right-4 z-10">
+                        <span
+                            class="bg-secondary-container text-on-secondary-container text-[10px] font-bold px-2 py-1 rounded uppercase tracking-tighter">Drought
+                            Tolerant</span>
+                    </div>
+                    <div class="w-full aspect-[4/5] overflow-hidden rounded-xl mb-6">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            data-alt="Corn variety"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfn7wp4hPrCsliQq1gT66pZ20PZ6Ud790M1079kwSu8h1TMyQh9c04uCxjNnJ82k7_1Uil5QuI1kg2P3FoPRCty1ZmR10ImxaBrZoFyhUu7BCyHwuaZkOqssbrIgjq2UCJzBxNYOA-1xeCyadzXitHoX7B_liyZL3L5-5zqPth_q2GOXTtRYImTzCWGBFsHNKxm4fgfJKF9SELvxxFtfJ_sdwnlDulQyLdYquMYgfHnfOSWbSlxMCJoIylqxD3u-J4VOxEHpS8YjQ" />
+                    </div>
+                    <h5 class="font-headline-md text-headline-md mb-1 text-on-primary-container">Meethi 88</h5>
+                    <p class="font-label-md text-label-md uppercase tracking-widest opacity-80 mb-6">Sweet Corn</p>
+                    <button
+                        class="mt-auto text-primary-fixed font-button text-button flex items-center gap-2 hover:gap-4 transition-all">View
+                        Details <span class="material-symbols-outlined"
+                            data-icon="chevron_right">chevron_right</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 12. Cultivating Success Stories (Testimonials) -->
+    <section class="py-xl bg-surface-container-lowest">
+        <div class="px-6 md:px-margin-desktop max-w-[1280px] mx-auto">
+            <div class="text-center mb-16">
+                <span
+                    class="text-primary font-label-md text-label-md mb-3 block uppercase tracking-widest">TESTIMONIALS</span>
+                <h2 class="font-headline-lg text-headline-lg">Cultivating Success Stories</h2>
+                <p class="font-body-md text-on-surface-variant max-w-2xl mx-auto mt-2">Real feedback from farmers who
+                    have transformed their harvests with Pancham Seeds.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Farmer 1 -->
+                <div
+                    class="bg-surface border border-outline-variant p-8 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col h-full">
+                    <div class="flex gap-1 mb-4">
+                        <span class="material-symbols-outlined text-[#fcab28] text-sm"
+                            style="font-variation-settings: 'FILL' 1">star</span>
+                        <span class="material-symbols-outlined text-[#fcab28] text-sm"
+                            style="font-variation-settings: 'FILL' 1">star</span>
+                        <span class="material-symbols-outlined text-[#fcab28] text-sm"
+                            style="font-variation-settings: 'FILL' 1">star</span>
+                        <span class="material-symbols-outlined text-[#fcab28] text-sm"
+                            style="font-variation-settings: 'FILL' 1">star</span>
+                        <span class="material-symbols-outlined text-[#fcab28] text-sm"
+                            style="font-variation-settings: 'FILL' 1">star</span>
+                    </div>
+                    <p class="font-body-md text-on-surface mb-8 italic leading-relaxed">"The Pancham Redgold variety has
+                        exceeded my expectations. Even in the peak of summer, the yield was 20% higher than last year.
+                        The fruit quality is excellent."</p>
+                    <div class="mt-auto flex items-center gap-4">
+                        <img alt="Farmer Ramesh Patel"
+                            class="w-14 h-14 rounded-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_Pyo1q7kU8n37DXJOQB2wikPiArGkRh94-SQu7736TfmssZfW1gWwQBcpXtmvlbJK6eU_7Ys2B4LLoPtuoBOc3Zv7dmGM6gQjleUL84EWxKClzagLKCiTh6b-EL7qSOqVepbicAs4x_NxjRduJ0213flfGjY_6z3JLPz2tjfNcgzS-E6lfsJ0KPP3F4CVMGfmajPiWyCrAdDj6Bobk74uvtrzCILFLeerqer6VjC4dLJUJYFiZyDPxN-zymjr2NFxNh8UwjqJvHo" />
+                        <div>
+                            <h6 class="font-button text-button">Ramesh Patel</h6>
+                            <p class="text-xs text-on-surface-variant">Gujarat • Tomato Farmer</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Farmer 2 -->
+                <div
+                    class="bg-surface border border-outline-variant p-8 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col h-full">
+                    <div class="flex gap-1 mb-4">
+                        <span class="material-symbols-outlined text-[#fcab28] text-sm"
+                            style="font-variation-settings: 'FILL' 1">star</span>
+                        <span class="material-symbols-outlined text-[#fcab28] text-sm"
+                            style="font-variation-settings: 'FILL' 1">star</span>
+                        <span class="material-symbols-outlined text-[#fcab28] text-sm"
+                            style="font-variation-settings: 'FILL' 1">star</span>
+                        <span class="material-symbols-outlined text-[#fcab28] text-sm"
+                            style="font-variation-settings: 'FILL' 1">star</span>
+                        <span class="material-symbols-outlined text-[#fcab28] text-sm"
+                            style="font-variation-settings: 'FILL' 1">star</span>
+                    </div>
+                    <p class="font-body-md text-on-surface mb-8 italic leading-relaxed">"Priya 81 Okra has very low
+                        disease incidence. My labor costs for pesticides have gone down, and the market buyers prefer
+                        the dark green color of these pods."</p>
+                    <div class="mt-auto flex items-center gap-4">
+                        <img alt="Farmer Sundeep Kumar"
+                            class="w-14 h-14 rounded-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJkaU4wrsmdBlc9wFRG0HwFDg1pwI__Xy52xp0P-uVg1Ufu5wnXRHBwwAZZDz62qTbCMEW7ogc6YPed2KXjFmRYcRA2szkCjv2HEkSZo33OJ_AmGtMQmGyG-FovAkkGnfOkSOwmvMA8jzB5I70kBnoixVxXsFb4ScKlnn8xgOPtknKQ7cSdYp1d-vxdimvgh12sQ9fdNoxSZWP-PTMa1askMZmoIvd_jwQ48G7ssLxHUkzpyz4PKAG_M6bkVjUlSJxwDrIFSnOp_E" />
+                        <div>
+                            <h6 class="font-button text-button">Sundeep Kumar</h6>
+                            <p class="text-xs text-on-surface-variant">Punjab • Okra Grower</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Farmer 3 -->
+                <div
+                    class="bg-surface border border-outline-variant p-8 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col h-full">
+                    <div class="flex gap-1 mb-4">
+                        <span class="material-symbols-outlined text-[#fcab28] text-sm"
+                            style="font-variation-settings: 'FILL' 1">star</span>
+                        <span class="material-symbols-outlined text-[#fcab28] text-sm"
+                            style="font-variation-settings: 'FILL' 1">star</span>
+                        <span class="material-symbols-outlined text-[#fcab28] text-sm"
+                            style="font-variation-settings: 'FILL' 1">star</span>
+                        <span class="material-symbols-outlined text-[#fcab28] text-sm"
+                            style="font-variation-settings: 'FILL' 1">star</span>
+                        <span class="material-symbols-outlined text-[#fcab28] text-sm"
+                            style="font-variation-settings: 'FILL' 1">star</span>
+                    </div>
+                    <p class="font-body-md text-on-surface mb-8 italic leading-relaxed">"Meethi 88 Sweet Corn has
+                        excellent sweetness and the ears are full to the tip. This variety is now our standard choice
+                        for all our contract farming projects."</p>
+                    <div class="mt-auto flex items-center gap-4">
+                        <img alt="Farmer Ananya Rao"
+                            class="w-14 h-14 rounded-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuvxi-_3CD-J2kDht6XdwEWUkd4WzIynYh6rprMHIig-lUyBk-GKFE476HboM6vEb5_30yGwFtJNa_90flIAFbkL1adWv3j2N96IlYPRHf1V0NFNIqJRLUbnePl50Ky9y4NtjabYFiKsAJZRTC7qiUeJvoKLE5Oqo6WCMgbmfx0wMHBANZq19OIA5uWMYxFdegJNp4nZwmKZWQ5tYyX4K-9kXIrxg4QoIe6OTH5YmMf_ZvMtO-hKRtfnqskoU5v4v2IImmQR6Ru-M" />
+                        <div>
+                            <h6 class="font-button text-button">Ananya Rao</h6>
+                            <p class="text-xs text-on-surface-variant">Andhra Pradesh • Corn Specialist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 13. FAQ Section -->
+    <section class="py-xl bg-surface-container-low">
+        <div class="px-6 md:px-margin-desktop max-w-4xl mx-auto">
+            <h2 class="font-headline-lg text-headline-lg mb-12 text-center">Frequently Asked Questions</h2>
+            <div class="space-y-6">
+                <details
+                    class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden"
+                    open="">
+                    <summary
+                        class="flex items-center justify-between p-8 cursor-pointer list-none font-button text-button text-on-surface group-open:bg-primary/5 transition-colors">
+                        Does Pancham Seeds specialize in specific crops?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform"
+                            data-icon="expand_more">expand_more</span>
+                    </summary>
+                    <div class="px-8 pb-8 text-on-surface-variant font-body-md leading-relaxed">
+                        We offer a comprehensive range of both Vegetable crops (like Tomato, Brinjal, Chilli, Okra) and
+                        Field crops (like Cotton, Maize, Paddy). Our expertise spans across high-yield hybrid varieties
+                        and research-driven seeds tailored for regional performance across India.
+                    </div>
+                </details>
+                <details
+                    class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden">
+                    <summary
+                        class="flex items-center justify-between p-8 cursor-pointer list-none font-button text-button text-on-surface group-open:bg-primary/5 transition-colors">
+                        How are seed germination and quality tested?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform"
+                            data-icon="expand_more">expand_more</span>
+                    </summary>
+                    <div class="px-8 pb-8 text-on-surface-variant font-body-md leading-relaxed">
+                        All our seeds undergo a multi-stage quality protocol in our NABL accredited laboratories and
+                        trial fields. We test for germination rates, genetic purity, seedling vigor, and disease
+                        resistance under various agro-climatic conditions.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+    <!-- Lead Form Section (New) -->
+    <section class="py-xl bg-surface-container-lowest">
+        <div class="px-6 md:px-margin-desktop max-w-[1280px] mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-primary font-label-md text-label-md mb-4 block uppercase tracking-widest">GET IN
+                        TOUCH</span>
+                    <h2 class="font-headline-lg text-headline-lg mb-6 leading-tight">Grow Your Success with Pancham
+                        Expertise</h2>
+                    <p class="font-body-lg text-on-surface-variant mb-10 leading-relaxed">Whether you are a farmer
+                        looking for the right variety or a dealer wanting to expand your portfolio, our team is here to
+                        help you make the right choice.</p>
+                    <div class="space-y-8">
+                        <div class="flex items-center gap-6">
+                            <div
+                                class="w-14 h-14 bg-primary/10 text-primary rounded-full flex items-center justify-center">
+                                <span class="material-symbols-outlined text-2xl" data-icon="call">call</span>
+                            </div>
+                            <div>
+                                <p class="text-sm text-on-surface-variant uppercase font-bold tracking-tighter">Call
+                                    Support</p>
+                                <p class="font-headline-md text-primary">+91 800-PANCHAM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <div
+                                class="w-14 h-14 bg-primary/10 text-primary rounded-full flex items-center justify-center">
+                                <span class="material-symbols-outlined text-2xl"
+                                    data-icon="location_on">location_on</span>
+                            </div>
+                            <div>
+                                <p class="text-sm text-on-surface-variant uppercase font-bold tracking-tighter">Head
+                                    Office</p>
+                                <p class="font-headline-md text-primary">Gujarat, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-surface-container-low p-10 rounded-3xl border border-outline-variant shadow-lg">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold text-on-surface-variant uppercase">Full Name</label>
+                                <input class="premium-input" placeholder="Your Name" type="text" />
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold text-on-surface-variant uppercase">Mobile Number</label>
+                                <input class="premium-input" placeholder="+91 00000 00000" type="tel" />
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold text-on-surface-variant uppercase">State</label>
+                                <select class="premium-input appearance-none bg-no-repeat bg-[right_1rem_center]">
+                                    <option>Gujarat</option>
+                                    <option>Maharashtra</option>
+                                    <option>Punjab</option>
+                                    <option>Andhra Pradesh</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold text-on-surface-variant uppercase">I am a...</label>
+                                <select class="premium-input appearance-none">
+                                    <option>Farmer</option>
+                                    <option>Dealer</option>
+                                    <option>Distributor</option>
+                                    <option>Nursery Owner</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold text-on-surface-variant uppercase">Interested
+                                Category</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Section -->
+    <section class="py-xl bg-surface-container-low">
+        <div class="px-6 md:px-margin-desktop max-w-3xl mx-auto">
+            <h2 class="font-headline-lg text-headline-lg mb-12 text-center">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <details
+                    class="group bg-surface-container-lowest rounded-xl border border-outline-variant overflow-hidden"
+                    open="">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none font-button text-button text-on-surface group-open:bg-primary/5">
+                        Does Pancham Seeds specialize in specific crops?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform"
+                            data-icon="expand_more">expand_more</span>
+                    </summary>
+                    <div class="px-6 pb-6 text-on-surface-variant font-body-md">
+                        We offer a comprehensive range of both Vegetable crops (like Tomato, Brinjal, Chilli, Okra) and
+                        Field crops (like Cotton, Maize, Paddy). Our expertise spans across high-yield hybrid varieties
+                        and
+                        research-driven seeds tailored for regional performance.
+                    </div>
+                </details>
+                <!-- FAQ Item 2 -->
+                <details
+                    class="group bg-surface-container-lowest rounded-xl border border-outline-variant overflow-hidden">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none font-button text-button text-on-surface group-open:bg-primary/5">
+                        How are seed germination and quality tested?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform"
+                            data-icon="expand_more">expand_more</span>
+                    </summary>
+                    <div class="px-6 pb-6 text-on-surface-variant font-body-md">
+                        All our seeds undergo a multi-stage quality protocol in our certified laboratories and trial
+                        fields.
+                        We test for germination rates, genetic purity, seedling vigor, and disease resistance to ensure
+                        only
+                        the highest quality seeds reach our farmers.
+                    </div>
+                </details>
+                <!-- FAQ Item 3 -->
+                <details
+                    class="group bg-surface-container-lowest rounded-xl border border-outline-variant overflow-hidden">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none font-button text-button text-on-surface group-open:bg-primary/5">
+                        How can I select the right variety for my soil type?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform"
+                            data-icon="expand_more">expand_more</span>
+                    </summary>
+                    <div class="px-6 pb-6 text-on-surface-variant font-body-md">
+                        We recommend consulting our regional crop experts or visiting a Pancham authorized dealer. Our
+                        product catalog also provides detailed soil and climatic requirements for each variety to help
+                        you
+                        make an informed decision.
+                    </div>
+                </details>
+                <!-- FAQ Item 4 -->
+                <details
+                    class="group bg-surface-container-lowest rounded-xl border border-outline-variant overflow-hidden">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none font-button text-button text-on-surface group-open:bg-primary/5">
+                        How can I become an authorized dealer?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform"
+                            data-icon="expand_more">expand_more</span>
+                    </summary>
+                    <div class="px-6 pb-6 text-on-surface-variant font-body-md">
+                        Interested businesses can apply through our 'Dealer Inquiry' form on the website or contact our
+                        regional sales offices. We look for partners who share our commitment to agricultural excellence
+                        and
+                        farmer prosperity.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+    <!-- Strong CTA -->
+    <section class="py-xl px-6 md:px-margin-desktop">
+        <div
+            class="max-w-[1200px] mx-auto bg-primary rounded-3xl p-12 text-center text-on-primary relative overflow-hidden">
+            <!-- Decorative circle -->
+            <div class="absolute -top-24 -left-24 w-64 h-64 bg-white/5 rounded-full"></div>
+            <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-white/5 rounded-full"></div>
+            <h2 class="font-display-lg text-display-lg mb-6 relative z-10">Ready to Find the Right Seed Variety?</h2>
+            <p class="font-body-lg text-body-lg mb-10 opacity-90 relative z-10 max-w-2xl mx-auto">Start your journey to
+                a
+                better harvest today. Our experts and product catalog are here to guide you.</p>
+            <div class="flex flex-wrap justify-center gap-4 relative z-10">
+                <button
+                    class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-button text-button shadow-soft hover:opacity-90">View
+                    Products</button>
+                <button
+                    class="bg-white text-primary px-8 py-4 rounded-lg font-button text-button hover:bg-surface-container transition-all">Contact
+                    Expert</button>
+                <button
+                    class="bg-[#25D366] text-white px-8 py-4 rounded-lg font-button text-button flex items-center gap-2 hover:opacity-90 shadow-soft">
+                    <span class="material-symbols-outlined" data-icon="chat">chat</span> WhatsApp Us
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-surface-container-highest dark:bg-surface-container-low pt-xl pb-12">
+        <div class="px-6 md:px-margin-desktop max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-lg">
+            <div>
+                <span class="text-primary text-headline-md font-bold font-headline-md block mb-6">Pancham Seeds</span>
+                <p class="font-body-md text-on-surface-variant mb-6 leading-relaxed">Precision in every seed. We are
+                    biological technology partners dedicated to the modern farmer's prosperity through research-driven
+                    hybrid seeds.</p>
+                <div class="flex gap-4">
+                    <a class="w-10 h-10 rounded-full border border-outline flex items-center justify-center text-on-surface-variant hover:border-primary hover:text-primary transition-all"
+                        href="#">
+                        <span class="material-symbols-outlined" data-icon="facebook">social_leaderboard</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full border border-outline flex items-center justify-center text-on-surface-variant hover:border-primary hover:text-primary transition-all"
+                        href="#">
+                        <span class="material-symbols-outlined" data-icon="language">language</span>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h6 class="font-button text-button text-primary font-bold mb-6">Product Categories</h6>
+                <ul class="space-y-4">
+                    <li><a class="font-body-md text-on-surface-variant hover:text-primary hover:underline transition-all"
+                            href="#">Hybrid Seeds</a></li>
+                    <li><a class="font-body-md text-on-surface-variant hover:text-primary hover:underline transition-all"
+                            href="#">Organic Research</a></li>
+                    <li><a class="font-body-md text-on-surface-variant hover:text-primary hover:underline transition-all"
+                            href="#">Yield Analytics</a></li>
+                    <li><a class="font-body-md text-on-surface-variant hover:text-primary hover:underline transition-all"
+                            href="#">Vegetable Catalog</a></li>
+                    <li><a class="font-body-md text-on-surface-variant hover:text-primary hover:underline transition-all"
+                            href="#">Field Crop Catalog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="font-button text-button text-primary font-bold mb-6">Quick Links</h6>
+                <ul class="space-y-4 mb-8">
+                    <li><a class="font-body-md text-on-surface-variant hover:text-primary hover:underline transition-all"
+                            href="#">Privacy Policy</a></li>
+                    <li><a class="font-body-md text-on-surface-variant hover:text-primary hover:underline transition-all"
+                            href="#">Terms of Service</a></li>
+                    <li><a class="font-body-md text-on-surface-variant hover:text-primary hover:underline transition-all"
+                            href="#">Career</a></li>
+                    <li><a class="font-body-md text-on-surface-variant hover:text-primary hover:underline transition-all"
+                            href="#">Media Kit</a></li>
+                </ul>
+                <div class="p-4 bg-surface-container rounded-lg border border-outline-variant">
+                    <p class="font-label-md text-label-md text-on-surface mb-2">Newsletter</p>
+                    <div class="flex gap-2">
+                        <input
+                            class="bg-white border-outline-variant rounded-lg flex-1 text-sm focus:ring-primary focus:border-primary"
+                            placeholder="Email address" type="email" />
+                        <button class="bg-primary text-on-primary p-2 rounded-lg"><span
+                                class="material-symbols-outlined" data-icon="send">send</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="px-6 md:px-margin-desktop max-w-[1200px] mx-auto mt-xl pt-8 border-t border-outline-variant text-center">
+            <p class="font-body-md text-on-surface-variant text-sm">© 2024 Pancham Seeds. All rights reserved. Precision
+                in
+                every seed.</p>
+        </div>
+    </footer>
+    <script>
+        // Simple micro-interaction for navbar transparency change on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
+
+        // Toggle logic for any interactive components if needed
+        document.querySelectorAll('details').forEach((targetDetail) => {
+            targetDetail.addEventListener('click', () => {
+                document.querySelectorAll('details').forEach((detail) => {
+                    if (detail !== targetDetail) {
+                        detail.removeAttribute('open');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
